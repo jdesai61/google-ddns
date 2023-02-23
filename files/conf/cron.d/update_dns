@@ -12,5 +12,5 @@
 #
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/5 * * * * (sh /opt/google_ddns/bin/google_ddns.sh -k=${KEY_FILE} -z=${ZONE} -d=${DOMAIN_NAME}) >> /var/log/google_ddns.log 2>&1
+*/5 * * * * (sh /opt/google_ddns/bin/google_ddns.sh -k=${KEY_FILE} -z=${ZONE} -d=${DOMAIN_NAME}) -e=${ENABLE_IPV6} >> /var/log/google_ddns.log 2>&1
 
